@@ -146,8 +146,7 @@ button {
   grid-template-columns: auto auto auto;
   justify-content: space-around;
   grid-gap:15px;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-around; */
+  
 }
 
 .card {
@@ -190,7 +189,12 @@ button {
     padding: 0 20px;
     width: 100%;
   }
-  
+  #histories{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-around;
+
+  }
   .card {
     flex-direction: column;
   }

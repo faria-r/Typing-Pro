@@ -111,7 +111,6 @@ const start = () => {
     // finished timer
     if (count === 0) {
       // -------------- START TYPING -----------------
-      console.log('insdie')
       document.addEventListener("keydown",typeController);
       countdownOverlay.style.display = "none";
       // display.classList.remove("inactive");

@@ -15,7 +15,7 @@
     </header>
     <main>
         <div id="questions" class="accordion container shadow-lg rounded p-4 bg-secondary " id="accordionPanelsStayOpenExample">
-            <div class="accordion-item bg-dark text-white">
+            <div class="accordion-item text-black">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     What are the difference between local storage and session storage?
@@ -23,11 +23,21 @@
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  Tha data we store in Local Storage is permanent.It doesn't  gets cleared automatically when the page is reload or closed the session until we remove it.We can apply multiple method for storing, removing and gettting data from local Storage.Such as: <br>
+                  <strong>localStorage.getItem(key)</strong> <br>
+                  <strong>localStorage.setItem(key,value)</strong> <br>
+                  <strong>localStorage.removeItem(key)</strong> <br>
+                  <strong>localStorage.clear()</strong> <br>
+                  The data stored into session storage is temporay and it gets clear if we closed the session or reload the page.
+                  It also has different methods like localStorage.They are: <br>
+                  <strong>sessionStorage.getItem(key)</strong> <br>
+                  <strong>sessionStorage.setItem(key,value)</strong> <br>
+                  <strong>sessionStorage.removeItem(key)</strong> <br>
+                  <strong>sessionStorage.clear()</strong> <br>
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-dark text-white">
+            <div class="accordion-item text-black">
               <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                   What are the differences between global scope and block scope?
@@ -35,11 +45,13 @@
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Global Scope</strong> means we can access the variable or any object or array from any where in a JavaScript program if it declared globally(not inside any funciton or loop). <br>
+                  <strong>Block scope</strong> means anything declared within a block can not access outside of that block.
+                  <br> But the variable declared with var can not have block Scope.
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-dark text-white">
+            <div class="accordion-item text-black">
               <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                  How JavaScript event loop does work?
@@ -47,11 +59,11 @@
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                   The <strong>event loop</strong> is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-dark text-white">
+            <div class="accordion-item text-black">
               <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                  Mention different ways Of getting undefined ?
@@ -59,7 +71,15 @@
               </h2>
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  There are  eight ways How we get undefined: <br>
+                   1.variable that is not initialized will give undefined. <br>
+                   2.function with no return will give undefined. <br>
+                   3.parameter that is not passed while function calling will give undefined <br>
+                   4.If return has nothing on the right side it will give undefined. <br>
+                   5.Trying to access a property  that doesn't exist in a object will give undefined. <br>
+                   6.Accessing array elements outsides of index range  <br>
+                   7.Deleting an element inside of a array. <br>
+                   8.Set a value directly to undefined <br>
                 </div>
               </div>
             </div>
